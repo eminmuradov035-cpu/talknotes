@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    border-bottom: 1px solid lightgray;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav h3{
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navLinks{
+    display: flex;
+    gap: 40px;
+}
+
+.navLinks a{
+    color: gray;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.2s ease-in;
+}
+
+.navLinks a:hover{
+    color: #4f46e5;
+    transition: all 0.2s ease-in;
+}
+
+.btn{
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.loginBtn{
+    background-color: #eef2ff;
+    color: #4f46e5;
+    margin-right: 10px;
+    transition: all 0.2s ease-in;
+}
+
+.loginBtn:hover{
+    background-color: #b3c2f5;
+    transition: all 0.2s ease-in;
+    scale: 1.1;
+}
+
+
+.actionBtn{
+    background-color: #4f46e5;
+    color: #eef2ff;
+    transition: all 0.2s ease-in;
+}
+
+.actionBtn:hover{
+    background-color: #736bff;
+    transition: all 0.2s ease-in;
+    scale: 1.1;
+}
+
+.firstSection{
+   display: flex;
+   margin-left: 380px;
+}
+
+.firstSection .flexDiv{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.firstSection .leftDiv h1{
+    line-height: 45px;
+}
+
+.firstSection .leftDiv h1 span{
+    color: #4f46e5;
+}
+
+.firstSection .leftDiv p{
+    color: gray;
+    font-size: 18px;
+    margin: 20px 0px;
+}
+
+.firstSection .leftDiv button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    background: #FB0075;
+    background: linear-gradient(90deg, rgba(251, 0, 117, 1) 0%, rgba(171, 0, 238, 1) 100%);
+}
+
+.firstSection .leftDiv button:hover{
+    transition: all 0.2s ease-in;
+    scale: 1.1;
+}
+
+.firstSection .rightDiv{
+    border: 1px solid #b1b2f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 40px 80px 40px;
+    width: fit-content;
+    border-radius: 8px;
+    margin-top: 80px;
+    background-color: white;
+}
+
+.firstSection .rightDiv .infoDiv{
+    margin: 50px 20px 20px 30px;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+}
+
+.firstSection .rightDiv .infoSpan{
+    color: gray;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.firstSection .rightDiv .infoPdiv{
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.firstSection .rightDiv .btnContainer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.firstSection .rightDiv .secondaryBtn{
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: #b1b2f8;
+    border-radius: 100%;
+    cursor: not-allowed;
+}
+
+.firstSection .rightDiv .mainBtn{
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(251, 0, 117, 1) 0%, rgba(171, 0, 238, 1) 100%);
+}
+
+.mainBtn:hover{
+    background-color: #fb4a9c;
+    transition: all 0.6s ease-in;
+    scale: 1.1;
+}
+
+.firstSection .rightDiv .continueBtn{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #b1b2f8;
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+    font-weight: 600;
+    margin-top: 50px;
+    cursor: not-allowed;
+}
+
+.iconDiv{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.secondSectiondiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+}
+
+.secondSectionp{
+    margin-bottom: 20px;
+    color: gray;
+    font-size: 20px;
+}
+
+.secondSectionptwo{
+    color: black;
+    font-size: 30px;
+    font-family: Poppins, Inter, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.secondSectioncontainer{
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    border: 0px solid #e5e7eb;
+    box-sizing: border-box;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.secondSectioncontainer .firstcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #e5e7eb;
+    box-sizing: border-box;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.secondSectioncontainer .firstcontainer h3{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.secondSectioncontainer .firstcontainer p{
+    color: gray;
+    font-size: 14px;
+}
+
+.secondSectioncontainer .firstcontainer:hover{
+    transition: all 0.2s ease-in;
+    scale: 1.1;
+}
+
+.secondSectioncontainer .secondcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #e5e7eb;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.secondSectioncontainer .secondcontainer h3{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.secondSectioncontainer .secondcontainer p{
+    color: gray;
+    font-size: 14px;
+}
+
+.secondSectioncontainer .secondcontainer:hover{
+    transition: all 0.2s ease-in;
+    scale: 1.1;
+}
+
+.secondSectioncontainer .theerthcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #e5e7eb;
+    box-sizing: border-box;
+    padding: 13px;
+    border-radius: 10px;
+}
+
+.secondSectioncontainer .theerthcontainer h3{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.secondSectioncontainer .theerthcontainer p{
+    color: gray;
+    font-size: 14px;
+}
+
+.secondSectioncontainer .theerthcontainer:hover{
+    transition: all 0.2s ease-in;
+    scale: 1.1;
+}
+
+.secondSectioncontainer .fourthcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #e5e7eb;
+    box-sizing: border-box;
+    padding: 21px;
+    border-radius: 10px;
+}
+
+.secondSectioncontainer .fourthcontainer h3{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.secondSectioncontainer .fourthcontainer p{
+    color: gray;
+    font-size: 14px;
+}
+
+.secondSectioncontainer .fourthcontainer:hover{
+    transition: all 0.2s ease-in;
+    scale: 1.1;
+}
+
+.secondSectioncontainer .fivethcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #e5e7eb;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.secondSectioncontainer .fivethcontainer h3{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.secondSectioncontainer .fivethcontainer p{
+    color: gray;
+    font-size: 14px;
+}
+
+.secondSectioncontainer .fivethcontainer:hover{
+    transition: all 0.2s ease-in;
+    scale: 1.1;
+}
+
+.secondSectioncontainer .sixthcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #e5e7eb;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.secondSectioncontainer .sixthcontainer h3{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.secondSectioncontainer .sixthcontainer p{
+    color: gray;
+    font-size: 14px;
+}
+
+.secondSectioncontainer .sixthcontainer:hover{
+    transition: all 0.2s ease-in;
+    scale: 1.1;
+}
+
+.secondSection button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 390px;
+    margin-bottom: 60px;
+    padding: 10px 15px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    background: #FB0075;
+    background: linear-gradient(90deg, rgba(251, 0, 117, 1) 0%, rgba(171, 0, 238, 1) 100%);
+}
+.secondSection button:hover{
+    transition: all 0.2s ease-in;
+    scale: 1.1;
+}
